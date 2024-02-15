@@ -40,7 +40,7 @@ discription.innerText = product.discription;
 productLocation.innerText = product.location;
 
 imgWrapper.append(img);
-imgWrapper.append(deleteButton);
+discriptionWrapper.append(deleteButton);
 productDetails.append(titlePriceLocationWrapper);
 productDetails.append(discriptionWrapper);
 titlePriceLocationWrapper.append(titleLocationWrapper);
