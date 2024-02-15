@@ -185,8 +185,8 @@ background: -moz-linear-gradient(90deg,#ecff55 20%, #bd48ff 80%);
         width: 100%;
     }
     .deleteButton{
-        top: 100%;
-        left: 55%;
+        top: 130%;
+        left: 50%;
         opacity: 0.8;
         background-color: rgb(87, 0, 145);
     }
@@ -219,7 +219,7 @@ background: -moz-linear-gradient(90deg,#ecff55 20%, #bd48ff 80%);
         font-size: 14px;
     }
     .deleteButton{
-        top: 90%;
+        top: 120%;
     }
 }
 @media screen and (max-width: 600px) {
@@ -245,7 +245,7 @@ background: -moz-linear-gradient(90deg,#ecff55 20%, #bd48ff 80%);
         font-size: 13px;
     }
     .deleteButton{
-        top: 90%;
+        top: 70%;
         left: 50%;
     }
 }
