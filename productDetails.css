@@ -66,7 +66,7 @@ header ul li a:hover{
 
 .deleteButton{
     position: absolute;
-  top: 85%;
+  top: 80%;
   left: 65%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -74,7 +74,7 @@ header ul li a:hover{
   opacity: 0.5;
   color: white;
   font-size: 16px;
-  padding: 12px 24px;
+  padding: 15px 27px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -148,6 +148,9 @@ background: -moz-linear-gradient(90deg,#ecff55 20%, #bd48ff 80%);
 }
 
 @media screen and (max-width: 1350px) {
+    .deleteButton{
+        top: 80%;
+    }
     .titleLocationWrapper h2{
         font-size: 30px;
     }
@@ -182,7 +185,7 @@ background: -moz-linear-gradient(90deg,#ecff55 20%, #bd48ff 80%);
         width: 100%;
     }
     .deleteButton{
-        top: 128%;
+        top: 80%;
         left: 55%;
         opacity: 0.8;
         background-color: rgb(87, 0, 145);
@@ -216,7 +219,7 @@ background: -moz-linear-gradient(90deg,#ecff55 20%, #bd48ff 80%);
         font-size: 14px;
     }
     .deleteButton{
-        top: 122%;
+        top: 80%;
     }
 }
 @media screen and (max-width: 600px) {
