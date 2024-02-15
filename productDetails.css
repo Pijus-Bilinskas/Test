@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    background: url(https://i.pinimg.com/originals/4e/de/5a/4ede5a33c5490195b2b17466ad26d124.gif) ;
+    background-size: cover;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15rem;
+    padding: 10px;
+}
+header svg{
+    width: 200px;
+    height: 100px;
+}
+
+header ul{
+    display: inline-flex;
+    list-style: none;
+    align-self: center;
+}
+header ul li a{
+    margin-right: 4rem;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    font-family: "Sora", sans-serif;
+}
+header ul li a:hover{
+    color: rgb(236, 255, 62);
+    font-size: 25px;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-header img{
+    width: 100px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    gap: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+
+.imgWrapper{
+    position: relative;
+    width: 40%;
+}
+
+.deleteButton{
+    position: absolute;
+  top: 85%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #313131;
+  opacity: 0.5;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.deleteButton:hover{
+    background-color: #5d009b;
+    opacity: 0.8;
+    padding: 13px 25px;
+}
+
+.successfullyRemovedCard{
+    color: white;
+    border: inset 5px rgb(241, 255, 42);
+    background: #ecff55;
+background: linear-gradient(90deg,#ecff55 20%, #bd48ff 80%);
+background: -webkit-linear-gradient(90deg,#ecff55 20%, #bd48ff 80%);
+background: -moz-linear-gradient(90deg,#ecff55 20%, #bd48ff 80%);
+    padding-top: 150px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-family: "Sora", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.card img{
+    width: 90%;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.productDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 60%;
+}
+
+.titlePriceLocationWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.titleLocationWrapper h2{
+    color: white;
+    text-shadow: 4px 0px 0px rgba(200,73,255,0.76);
+    font-size: 35px;
+    font-family: "Sora", sans-serif;
+}
+.titleLocationWrapper h5{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-shadow: 4px 0px 0px rgba(163, 168, 0, 0.76);
+    font-family: "Sora", sans-serif;
+}
+
+.priceWrapper h4{
+    color: yellow;
+    margin-right: 2rem;
+    font-size: 22px;
+    font-family: "Sora", sans-serif;
+}
+
+.discriptionWrapper p{
+    color: white;
+    font-size: 17px;
+    font-family: "Sora", sans-serif;
+}
+
+@media screen and (max-width: 1350px) {
+    .titleLocationWrapper h2{
+        font-size: 30px;
+    }
+    .titleLocationWrapper h5{
+        font-size: 16px;
+    }
+    .priceWrapper h4{
+        font-size: 18px;
+    }
+    .discriptionWrapper p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .wrapper{
+        margin-bottom: 50px;
+    }
+    .card{
+        flex-direction: column;
+
+    }
+    .card img{
+        width: 100%;
+        height: 450px;
+        border-radius: 15px;
+    }
+    
+    .productDetails{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+    .deleteButton{
+        top: 128%;
+        left: 55%;
+        opacity: 0.8;
+        background-color: rgb(87, 0, 145);
+    }
+    .deleteButton:hover{
+        background-color: rgb(187, 0, 187);
+        opacity: 0.9;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header{
+        margin-bottom: 13rem;
+    }
+    .card img{
+        height: 400px;
+    }
+    .titleLocationWrapper h2{
+        font-size: 26px;
+
+    }
+    .titleLocationWrapper h5{
+        font-size: 14px;
+    }
+    
+    .priceWrapper h4{
+        font-size: 16px;
+    }
+    
+    .discriptionWrapper p{
+        font-size: 14px;
+    }
+    .deleteButton{
+        top: 122%;
+    }
+}
+@media screen and (max-width: 600px) {
+    header{
+        margin-bottom: 12rem;
+    }
+    .card img{
+        height: 400px;
+    }
+    .titleLocationWrapper h2{
+        font-size: 23px;
+
+    }
+    .titleLocationWrapper h5{
+        font-size: 16px;
+    }
+    
+    .priceWrapper h4{
+        font-size: 16px;
+    }
+    
+    .discriptionWrapper p{
+        font-size: 13px;
+    }
+    .deleteButton{
+        top: 124%;
+        left: 50%;
+    }
+}

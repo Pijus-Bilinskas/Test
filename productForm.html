@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productForm.css">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#000000" d="M0 0l7.971 15.516L16 0H0zm6.732 6.16h-1.27V4.89h1.27v1.27zm0-1.906h-1.27V2.985h1.27v1.269zm1.904 3.81h-1.27v-1.27h1.27v1.27zm0-1.905h-1.27V4.89h1.27v1.27zm0-1.905h-1.27V2.985h1.27v1.269zm1.894 1.905H9.26V4.89h1.27v1.27zM9.26 4.254V2.985h1.27v1.269H9.26z"/></svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Products</a></li>
+                <li><a href="#">Add Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form">
+        <input id="name" type="text" placeholder="Name">
+        <input id="price" type="number" placeholder="Price in euros">
+        <input id="imgUrl" type="text" placeholder="imgUrl">
+        <input id="location" placeholder="city" type="text">
+        <textarea id="discription" itemid="discription" placeholder="discription" name="" id="" cols="30" rows="5"></textarea>
+        <div class="validationmessage">
+        <div class="succesMessage" id="succesMessage"></div>
+        <div class="errorMessage" id="errorMessage"></div>
+        </div>
+        <button type="submit" id="button"> Submit</button>
+    </div>
+
+    <script src="productForm.js"></script>
+</body>
+</html>

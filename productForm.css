@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    background: url(https://i.pinimg.com/originals/4e/de/5a/4ede5a33c5490195b2b17466ad26d124.gif) ;
+    background-size: cover;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15rem;
+    padding: 10px;
+}
+header svg{
+    width: 200px;
+    height: 100px;
+}
+
+header ul{
+    display: inline-flex;
+    list-style: none;
+    align-self: center;
+}
+header ul li a{
+    margin-right: 4rem;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    font-family: "Sora", sans-serif;
+}
+header ul li a:hover{
+    color: rgb(236, 255, 62);
+    font-size: 25px;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-header img{
+    width: 100px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.form input{
+    padding: 10px 7px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 65);
+    border: inset 1px rgb(255, 255, 78);
+    color: white;
+}
+.form textarea{
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(0, 0, 65);
+    border: inset 1px rgb(255, 255, 78);
+    color: white;
+}
+.form button{
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    color: rgb(252, 255, 70);
+    background-color: rgb(23, 0, 156);
+}
+.form button:hover{
+    color: rgb(122, 0, 126);
+    background-color: rgb(246, 255, 195);
+    cursor: pointer;
+}
+
+
+.validationmessage{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.succesMessage{
+    color: rgb(53, 255, 53);
+    font-size: 20px;
+}
+.errorMessage{
+    color: rgb(255, 41, 41);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
