@@ -11,7 +11,9 @@ header{
     padding: 10px;
     margin-bottom: 50px;
     background-color: rgb(231, 229, 229);
-
+    box-shadow: -1px 5px 9px 0px rgba(18,18,18,0.61);
+-webkit-box-shadow: -1px 5px 9px 0px rgba(18,18,18,0.61);
+-moz-box-shadow: -1px 5px 9px 0px rgba(18,18,18,0.61);
 }
 
 
@@ -33,12 +35,12 @@ header ul li a:hover{
     font-size: 25px;
 }
 
-.main-header{
+.mainHeader{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.main-header img{
+.mainHeader img{
     width: 220px;
     height: 150px;
 }
@@ -96,6 +98,13 @@ header ul li a:hover{
     justify-content: space-between;
 }
 
+.card:hover{
+    box-shadow: 1px 1px 5px 2px rgba(18,18,18,0.51);
+-webkit-box-shadow: 1px 1px 5px 2px rgba(18,18,18,0.51);
+-moz-box-shadow: 1px 1px 5px 2px rgba(18,18,18,0.51);
+    cursor: pointer;
+}
+
 .imgwrapper{
     height: 65%;
     width: 100%;
@@ -136,11 +145,7 @@ footer{
 }
 
 
-@media screen and (max-width: 1200px) {
-    .card{
-        width: 30%;
-    }
-}
+
 @media screen and (max-width: 1300px) {
     .card{
         width: 23%;
@@ -149,7 +154,7 @@ footer{
 
 @media screen and (max-width: 1200px) {
     .card{
-        width: 45%;
+        width: 46%;
     }
 }
 
@@ -160,7 +165,7 @@ footer{
         height: 50px;
         padding: 5px;
     }
-    .main-header img{
+    .mainHeader img{
         height: 60px;
         width: 80px;
     }

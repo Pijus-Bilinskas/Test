@@ -42,7 +42,6 @@ button.addEventListener('click', async () => {
               body: JSON.stringify(productData),
             }
           );
-        const addedProduct = await response.json() 
 
         errorMessage.textContent = "";
         successMessage.textContent = "Product was added successfuly"; 

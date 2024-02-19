@@ -11,14 +11,14 @@ const fetchProducts = async () => {
 
     products.forEach((product) => {
         const card = document.createElement('div');
-        card.setAttribute('class', 'card');
         const title = document.createElement('h2');
         const img = document.createElement('img');
         const price = document.createElement('h4');
-
+        
         const imgWrapper = document.createElement('div');
         const titlePriceWrapper = document.createElement('div');
-
+        
+        card.setAttribute('class', 'card');
         titlePriceWrapper.setAttribute('class', 'titlePriceWrapper');
         imgWrapper.setAttribute('class', 'imgwrapper');
         
@@ -35,7 +35,7 @@ const fetchProducts = async () => {
 
         card.addEventListener('click', () => {
             localStorage.setItem('selectedProduct', JSON.stringify(product));
-            window.location.href = './productDetails.html';
+            window.location.href = '../product-details/productDetails.html';
         });
 
         wrapper.append(card);

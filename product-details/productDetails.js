@@ -6,7 +6,6 @@ const product = JSON.parse(localStorage.getItem('selectedProduct'));
 console.log(product);
 
 const card = document.createElement('div');
-card.setAttribute('class', 'card');
 const title = document.createElement('h2');
 const img = document.createElement('img');
 const price = document.createElement('h4');
@@ -19,14 +18,10 @@ const discriptionWrapper = document.createElement('div');
 const titleLocationWrapper = document.createElement('div');
 const priceWrapper = document.createElement('div');
 
-
 const deleteButton = document.createElement('button');
 deleteButton.innerText = 'Delete Product';
 
-
-
-
-
+card.setAttribute('class', 'card');
 deleteButton.setAttribute('class', 'deleteButton')
 productDetails.setAttribute('class', 'productDetails');
 imgWrapper.setAttribute('class', 'imgwrapper');
