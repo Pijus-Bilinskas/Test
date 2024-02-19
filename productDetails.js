@@ -74,7 +74,7 @@ deleteButton.addEventListener('click', async () => {
             wrapper.append(successfullyRemovedCard);
             console.log('Product deleted successfully');
         } else {
-            throw new Error('Failed to delete product');
+            console.log('Failed to delete product');
         }
     } catch (error) {
         console.error('Error deleting product:', error);
