@@ -1,8 +1,6 @@
 body{
     margin: 0;
-    background: url(https://i.pinimg.com/originals/4e/de/5a/4ede5a33c5490195b2b17466ad26d124.gif) ;
-    background-size: cover;
-
+    background-color: rgb(209, 209, 209);
 }
 
 header{
@@ -10,13 +8,12 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15rem;
     padding: 10px;
+    margin-bottom: 50px;
+    background-color: rgb(231, 229, 229);
+
 }
-header svg{
-    width: 200px;
-    height: 100px;
-}
+
 
 header ul{
     display: inline-flex;
@@ -32,7 +29,7 @@ header ul li a{
     font-family: "Sora", sans-serif;
 }
 header ul li a:hover{
-    color: rgb(236, 255, 62);
+    color: rgb(148, 0, 0);
     font-size: 25px;
 }
 
@@ -42,9 +39,43 @@ header ul li a:hover{
     align-items: center;
 }
 .main-header img{
-    width: 100px;
+    width: 220px;
+    height: 150px;
 }
 
+.burgerButton svg{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.mobileMenu{
+    position: fixed;
+    top: 6%;
+    left: 100%;
+    width: 30%;
+    background-color: rgb(231, 229, 229);
+    transition: 0.4s;
+}
+
+.mobileMenu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.mobileMenu ul li{
+    padding: 17px 20px;
+}
+.mobileMenu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+
+}
+.mobileMenuToggle{
+    left: 70%;
+}
 
 .form{
     display: flex;
@@ -59,32 +90,38 @@ header ul li a:hover{
 .form input{
     padding: 10px 7px;
     border-radius: 5px;
-    background-color: rgb(0, 0, 65);
-    border: inset 1px rgb(255, 255, 78);
-    color: white;
+    background-color: rgb(206, 206, 206);
+    color: rgb(0, 0, 0);
 }
 .form textarea{
     border-radius: 5px;
-    border: 0px;
-    background-color: rgb(0, 0, 65);
-    border: inset 1px rgb(255, 255, 78);
-    color: white;
+    padding: 5px;
+    border: solid 2px;
+    background-color: rgb(206, 206, 206);
+    color: black;
 }
 .form button{
     width: 20%;
     margin: auto;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 10px;
     border: 0;
-    color: rgb(252, 255, 70);
-    background-color: rgb(23, 0, 156);
+    color: rgb(252, 255, 90);
+    background-color: rgb(95, 95, 95);
 }
 .form button:hover{
-    color: rgb(122, 0, 126);
+    color: rgb(126, 0, 0);
     background-color: rgb(246, 255, 195);
     cursor: pointer;
 }
 
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    margin-top: 50px;
+}
 
 .validationmessage{
     display: flex;
@@ -100,6 +137,27 @@ header ul li a:hover{
     font-size: 20px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+    }
+    .main-header img{
+        height: 60px;
+        width: 80px;
+    }
 
+    .burgerButton svg{
+      display: flex; 
+        height: 50px;
+    }
+    header nav{
+        display: none;
+    }
+    footer{
+        margin-top: 35%;
+
+    }
 }

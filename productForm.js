@@ -1,4 +1,6 @@
 const button = document.getElementById('button');
+const burgerBtn = document.getElementById('burgerButton')
+const burgerMenu = document.getElementById('mobileMenu')
 
 
 button.addEventListener('click', async () => {
@@ -48,4 +50,8 @@ button.addEventListener('click', async () => {
         errorMessage.textContent = "Did not fill boxes correctly";
         successMessage.textContent = ""; 
     }
+})
+
+burgerBtn.addEventListener('click', () => {
+  burgerMenu.classList.toggle('mobileMenuToggle')
 })

@@ -1,4 +1,6 @@
-const wrapper = document.getElementById('wrapper')
+const wrapper = document.getElementById('wrapper');
+const burgerBtn = document.getElementById('burgerButton')
+const burgerMenu = document.getElementById('mobileMenu')
 
 
 const fetchProducts = async () => {
@@ -13,11 +15,13 @@ const fetchProducts = async () => {
         const title = document.createElement('h2');
         const img = document.createElement('img');
         const price = document.createElement('h4');
-        const imgWrapper = document.createElement('div');
-        imgWrapper.setAttribute('class', 'imgwrapper');
-        const titlePriceWrapper = document.createElement('div');
-        titlePriceWrapper.setAttribute('class', 'titlePriceWrapper')
 
+        const imgWrapper = document.createElement('div');
+        const titlePriceWrapper = document.createElement('div');
+
+        titlePriceWrapper.setAttribute('class', 'titlePriceWrapper');
+        imgWrapper.setAttribute('class', 'imgwrapper');
+        
         title.innerText = product.name;
         img.src = product.imgUrl;
         price.innerText = `${product.price} eur`;
@@ -40,3 +44,7 @@ const fetchProducts = async () => {
 };
 
 fetchProducts();
+
+burgerBtn.addEventListener('click', () => {
+    burgerMenu.classList.toggle('mobileMenuToggle')
+})

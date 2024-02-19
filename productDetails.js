@@ -1,4 +1,6 @@
 const wrapper = document.getElementById('wrapper');
+const burgerBtn = document.getElementById('burgerButton')
+const burgerMenu = document.getElementById('mobileMenu')
 
 const product = JSON.parse(localStorage.getItem('selectedProduct'));
 console.log(product);
@@ -78,3 +80,7 @@ deleteButton.addEventListener('click', async () => {
         console.error('Error deleting product:', error);
     }
 });
+
+burgerBtn.addEventListener('click', () => {
+    burgerMenu.classList.toggle('mobileMenuToggle')
+})
