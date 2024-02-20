@@ -107,7 +107,7 @@ header ul li a:hover{
     left: 70%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #313131;
+  background-color: #940000;
   opacity: 0.5;
   color: white;
   font-size: 16px;
@@ -117,7 +117,7 @@ header ul li a:hover{
   border-radius: 5px;
 }
 .deleteButton:hover{
-    background-color: #a50f0f;
+    background-color: #eb1111;
     opacity: 0.8;
     padding: 13px 25px;
 }
